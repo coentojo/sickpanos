@@ -1,0 +1,31 @@
+<div id="welcome">
+	<%= image_tag "welcome_pano.jpg", :id => 'bg' %>
+	<div id="logo">SICKPANOS</div>
+
+	<%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
+	  <div class="login"><p class="notice"><%= notice %></p></div>
+	  <div class="login"><p class="alert"><%= alert %></p></div>
+	
+	  <div class="login"><%= f.label :email %><br />
+	  <%= f.email_field :email, :class => "login_input_field" %></div>
+
+	  <div class="login"><%= f.label :password %><br />
+	  <%= f.password_field :password, :class => "login_input_field" %></div>
+
+
+	  <div class="login"><%= f.submit "Login", :class => "login_button" %></div>
+	  <br/>
+	
+	  <div style="text-align: center; margin-bottom: 5px;">Or</div>
+	  <div style="text-align: center"><%= link_to "Sign Up", new_user_registration_path %></div>
+	<% end %>
+
+
+	<!-- <%= render :partial => "devise/shared/links" %> -->
+	
+	<div id='scroll_to_find_more'>Scroll this way to find out more</div>
+	
+	<!-- <div id="welcome_information">
+		<div id="welcome_text">SICKPANOS makes your awesome panoramic photos look even awesomer on the web. Viewing panos like <%= link_to 'this one', '#', :id => "sucks" %> suck, doesn't it? <br/><br/> SICKPANOS let's you upload your panos and a unique url will be generated like this one: ... that you can share with anyone. This is supes simple.</div>
+	</div> -->
+</div>

@@ -1,0 +1,22 @@
+#welcome { width: 100%; height: 100%; font-family: "futura-pt-1"; }
+#logo { font-weight: 700; font-style: italic; font-size: 120px; color: #FFFFFF; position: fixed; left: 100px; z-index: 7;}
+
+#new_user { z-index: 5; position: absolute; left: 110px; top: 160px; }
+
+.login { text-align: center }
+.login_input_field { height: 25px; border: 1px solid #c3c3c3; width: 200px; background-color: rgba(255, 255, 255, .1); margin-bottom: 10px; }
+.login_button { height: 25px; border: 1px solid #c3c3c3; width: 204px; background-color: rgba(255, 255, 255, .7); cursor: pointer; }
+
+#nav_bar { height: 100px; width: 100%; position: fixed; top: 0; left: 0; background-color: #000000; opacity: 0.7; z-index: 5; }
+#logo_nav_bar { font-family: "futura-pt-1"; font-weight: 700; font-style: italic; font-size: 80px; color: #FFFFFF; float: left; margin-left: 25px; }
+#links_nav_bar { float: right; color: #FFFFFF; font-size: 16px; margin-right: 25px; margin-top: 35px; }
+#links_nav_bar a, #links_nav_bar a:link { font-family: "futura-pt-1"; font-weight: 100; letter-spacing: 0.2em; text-decoration: none; color: #FFFFFF; }
+
+h1 { font-family: "futura-pt-1"; font-size: 40px; color: #000000; margin-top: 160px; }
+#error_explanation { font-family: "futura-pt-1"; font-size: 12px; color: #000000; }
+
+.signup_button { height: 25px; border: 1px solid #c3c3c3; width: 204px; background-color: rgba(255, 255, 255, .7); text-align: center; }
+
+#welcome_information { height: 500px; width: 400px; background-color: rgba(195, 195, 195, .5); border: 1px solid #C3C3C3; position: absolute; top: 200px; left: 1200px; z-index: 10; padding: 20px; }
+
+#welcome_text { opacity: 1; font-size: 25px; position: relative; margin: 20px; color: #000000;  }

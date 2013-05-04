@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sickpanos</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+  <script type="text/javascript" src="//use.typekit.net/ctm6fhx.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+</head>
+<body>
+
+
+<% if user_signed_in? %>
+	<!-- <p class="notice"><%= notice %></p>
+	<p class="alert"><%= alert %></p> -->
+
+	<div id="nav_bar">
+		<div id="logo_nav_bar">SICKPANOS</div>
+		<div id="links_nav_bar">
+		<% if user_signed_in? %>
+			<%= link_to "Create", new_image_path %> | 
+			<%= link_to "My Collection", mypanos_users_path %> |
+			<%= link_to "View Community", images_path %> | 
+			<%= link_to "Logout", destroy_user_session_path, method: :delete %><br/>
+		<% else %>
+			<%= link_to "Login", new_user_session_path %>
+			<%= link_to "Sign up", new_user_registration_path %><br/>
+		<% end %>
+		</div>
+	</div>
+	
+<% end %>
+
+<%= yield %>
+
+</body>
+</html>

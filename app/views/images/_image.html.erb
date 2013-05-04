@@ -1,0 +1,2 @@
+<%= image_tag @image.file.to_s, :id => 'bg' %>
+<div id='shareable_link'>YAY, pano created. <%= link_to 'View Collection', mypanos_users_path %><br/>Share the following link: <br/><%= request.protocol + request.host_with_port + request.fullpath %>/<%= @image.hashed_url %></div>
