@@ -1,15 +1,18 @@
 development:
-  adapter: postgresql
-  encoding: unicode
-  database: sickpanos_development
-  host: localhost
+  adapter: sqlite3
+  database: db/development.sqlite3
   pool: 5
-  username: christopheroentojo
 
 test:
+  adapter: sqlite3
+  database: db/development.sqlite3
+  pool: 5
+
+production:
   adapter: postgresql
   encoding: unicode
-  database: sickpanos_test
-  host: localhost
+  database: sickpanos_production
   pool: 5
   username: christopheroentojo
+  password:
+ 
