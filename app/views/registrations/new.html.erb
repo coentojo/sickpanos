@@ -15,7 +15,7 @@
 	  <div><%= f.label :password_confirmation %><br />
 	  <%= f.password_field :password_confirmation, :class => "login_input_field" %></div>
 
-	  <div class="login">Code<br />
+	  <div>Code<br />
 	  <%= text_field_tag("code", nil, :class => "login_input_field") %></div>
 	
 	  <div><%= f.submit "Sign up", {:class => "login_button", :disabled => 'disabled'} %></div>
