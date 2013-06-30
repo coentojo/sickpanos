@@ -2,11 +2,11 @@
   width: 400px;
   position: fixed;
   left: 35%;
-  top: 100px; 
+  top: 120px; 
 
 
   .progress {
-    margin-top: 8px;
+    margin-top: 20px;
     border: solid 1px #555;
     border-radius: 3px;
     -moz-border-radius: 3px;
@@ -28,14 +28,16 @@
 .small_banner_community { height: 200px; margin-bottom: 20px; }
 .small_banner { height: 200px; float: left; }
 
-.pano_deets { float: left; margin-left: 25px; font-family: "futura-pt-1"; font-weight: 400; text-align: center; padding-top: 70px; }
-.pano_row { width: 100%; height: 200px; margin-bottom: 20px; }
+.full_banner_community { width: 1200px; margin-bottom: 20px; }
 
-#shareable_link { height: 60px; width: 300px; background-color: #000000; opacity: 0.7; z-index: 6; position: absolute; top: 20px; left: 20px; padding: 10px; color: #FFFFFF; font-family: "futura-pt-1"; font-weight: 300; }
+.pano_deets { font-family: "futura-pt-1"; font-weight: 400; float: right; }
+.pano_row { width: 100%; margin-bottom: 20px; }
 
-.shareable_link_community { color: #000000; background-color: #C3C3C3; padding: 8px; color: #FFFFFF; }
+#shareable_link { height: 60px; background-color: #a16ac4; opacity: 0.7; z-index: 6; position: absolute; top: 20px; left: 20px; padding: 10px; color: #FFFFFF; font-family: "futura-pt-1"; font-weight: 300; }
 
-#sudo_click { width: 98%; margin: 10px; height: 500px; border: 5px dashed #c3c3c3; border-radius: 5px; cursor: pointer; text-align: center; font-size: 60px; color: #e0e0e0; font-family: "futura-pt-1"; font-weight: 300; font-style: italic; padding-top: 200px; }
+.shareable_link_community { color: #7a548c;}
+
+#sudo_click { width: 98%; margin: 10px; height: 300px; border: 5px dashed #c3c3c3; border-radius: 5px; cursor: pointer; text-align: center; font-size: 60px; color: #e0e0e0; font-family: "futura-pt-1"; font-weight: 300; font-style: italic; padding-top: 140px; }
 
 #hide_input { visibility: hidden; }
 

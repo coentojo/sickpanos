@@ -1,11 +1,15 @@
-<h1>Community</h1>
-
+<h1>all sickpanos</h1>
 
 <% @images.each do |image| %>
- 	<div><%= link_to image_tag(image.file_url(:thumb), :class => 'small_banner_community'), image_path(image.hashed_url) %></div>
+	<div class="pano_deets">
+		<% if image.user.email == current_user.email %>
+			sickpano cred: <%= link_to(image.user.username, mypanos_users_path) %>
+		<% else %>
+			sickpano cred: <%= link_to(image.user.username, user_path(image.user)) %>
+		<% end %>
+	</div>
+ 	<div><%= link_to image_tag(image.file_url, :class => 'full_banner_community'), image_path(image.hashed_url) %></div>
     <br clear="all" />
 <% end %>
 
 <br />
-
-<%= link_to 'New Image', new_image_path %>
