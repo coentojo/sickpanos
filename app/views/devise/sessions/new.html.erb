@@ -6,10 +6,10 @@
 	  <div class="login"><p class="notice"><%= notice %></p></div>
 	  <div class="login"><p class="alert"><%= alert %></p></div>
 	
-	  <div><%= f.label :email %><br />
+	  <div class="login"><%= f.label :email %><br />
 	  <%= f.email_field :email, :class => "login_input_field" %></div>
 
-	  <div><%= f.label :password %><br />
+	  <div class="login"><%= f.label :password %><br />
 	  <%= f.password_field :password, :class => "login_input_field" %></div>
 
 	  <div class="login"><%= f.submit "Login", :class => "login_button" %></div>
