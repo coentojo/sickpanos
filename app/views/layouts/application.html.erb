@@ -13,32 +13,42 @@
 
 
 <% if user_signed_in? %>
-	<div id="messages">
-		<p class="notice"><%= notice %></p>
-		<p class="alert"><%= alert %></p>
-	</div>
-	<div id="nav_bar">
-		<div id="logo_nav_bar">SICKPANOS</div>
-		<div id="links_nav_bar">
-			<% if user_signed_in? %>
-				<ul id="navigation">
-					<li><%= link_to "upload", new_image_path %></li> | 
-					<li><%= link_to "my panos", mypanos_users_path %></li> | 
-					<li><%= link_to "all panos", images_path %></li> | 
-					<li><%= link_to "account", edit_user_path(current_user) %></li> | 
-					<li><%= link_to "logout", destroy_user_session_path, method: :delete %></li>
-				</ul>
-			<% else %>
-				<%= link_to "login", new_user_session_path %>
-				<%= link_to "sign up", new_user_registration_path %><br/>
-			<% end %>
-		</div>
-	</div>
+  <header>
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span3 text-left">
+          <p class="notice"><%= notice %></p>
+          <p class="alert"><%= alert %></p>
+        </div>
+
+        <div class="span5 text-center">
+          <h1>SICKPANOS</h1>
+        </div>
+
+        <div class="span4 text-right">
+          <% if user_signed_in? %>
+            <ul id="navigation">
+              <li><%= link_to "upload", new_image_path %></li> | 
+              <li><%= link_to "my panos", mypanos_users_path %></li> | 
+              <li><%= link_to "all panos", images_path %></li> | 
+              <li><%= link_to "account", edit_user_path(current_user) %></li> | 
+              <li><%= link_to "logout", destroy_user_session_path, method: :delete %></li>
+            </ul>
+          <% else %>
+            <%= link_to "login", new_user_session_path %>
+            <%= link_to "sign up", new_user_registration_path %><br/>
+          <% end %>
+        </div>
+
+      </div>
+    </div>
+
+  </header>
+
 	
 <% end %>
-<div id="content">
+
 	<%= yield %>
-</div>
 
 </body>
 </html>

@@ -1,12 +1,22 @@
-<h1>my sickpanos</h1>
+<div class="container-fluid index-images">
+
+<div class="row-fluid content-width">
+  <div class="span12 text-left">
+    <h2>my sickpanos</h2>
+  </div>
+</div>
 
 <% @images.each do |image| %>
-	<div class="pano_row">
-		<div class="pano_deets">
-			share your sickpano: <span class='shareable_link_community'><%= request.protocol + request.host_with_port %>/<%= image.hashed_url %></span>
-		</div>
-	 	<%= link_to image_tag(image.file_url, :class => 'full_banner_community'), image_path(image.hashed_url) %>
-	</div>
-	<br/>
+    <div class="row-fluid pano-deets content-width">
+      <div class="span12 text-right">
+        share your sickpano: <span class='shareable_link_community'><%= request.protocol + request.host_with_port %>/<%= image.hashed_url %></span>
+
+      </div>
+    </div>
+
+    <%= link_to image_tag(image.file_url, :class => 'full_banner_community'), image_path(image.hashed_url) %>
+    <br clear="all" />
+
 <% end %>
+</div>
 

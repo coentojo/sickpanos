@@ -91,7 +91,6 @@ class ImagesController < ApplicationController
   end
   
   def go
-    puts "GOT HERE BITCH"
     hashed_url = params[:hashed_url]
     @image = Image.find_by_hashed_url(hashed_url)
   end

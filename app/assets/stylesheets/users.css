@@ -56,32 +56,38 @@ li {
 	text-decoration: none;
 }
 
-#nav_bar {
-	height: 100px;
-	width: 1200px;
-	opacity: 1;
-	z-index: 5;
-	margin-left: auto;
-	margin-right: auto;
+
+
+
+
+/* HOME */
+
+header {
+	max-width: 1200px;
+	margin: 20px auto;	
 }
-#logo_nav_bar {
+
+.nav {
+	margin-top: -60px;
+
+}
+
+h1 {
 	font-family: "futura-pt";
 	font-weight: 700;
 	font-style: italic;
-	font-size: 80px;
+	font-size: 70px;
 	color: #a16ac4;
-	margin-left: 320px;
-	float: left;
 }
-#links_nav_bar {
-	float: right;
+
+h4 {
+	font-family: "futura-pt";
+	font-weight: 700;
+	font-style: italic;
+	font-size: 40px;
+	color: #a16ac4;
 }
-#messages {
-	width: 1200px;
-	height: 20px;
-	margin-left: auto;
-	margin-right: auto;
-}
+
 .notice, .alert {
 	float: left;
 	color: #b88cbf;
@@ -89,7 +95,10 @@ li {
 	line-height: 12px;
 	font-family: "futura-pt";
 	font-weight: 100;
+	background-color: #FFFFFF;
+	border: 0;
 }
+
 #navigation a,#navigation a:link {
 	font-family: "futura-pt";
 	font-weight: 100;
@@ -101,12 +110,15 @@ li {
 #navigation a:hover {
 	border-bottom: 1px solid;
 }
-h1 {
+h2 {
 	font-family: "futura-pt";
 	font-size: 30px;
 	color: #7a548c;
-	margin-top: 40px;
+	margin-top: 40px;;
+	font-weight: 500;
+	font-style: italic;
 }
+
 #error_explanation {
 	font-family: "futura-pt";
 	font-size: 12px;

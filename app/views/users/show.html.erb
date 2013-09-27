@@ -1,9 +1,16 @@
-<h1><%= @user.username %> has sickpanos</h1>
+<div class="container-fluid index-images">
+
+<div class="row-fluid content-width">
+  <div class="span12 text-left">
+    <h2><%= @user.username %> has sickpanos</h2>
+  </div>
+</div>
 
 <% @user.images.each do |image| %>
-	<div class="pano_row">
-	 	<%= link_to image_tag(image.file_url, :class => 'full_banner_community'), image_path(image.hashed_url) %>
-	</div>
+  <div class="row-fluid pano-deets">
+	 <%= link_to image_tag(image.file_url, :class => 'full_banner_community'), image_path(image.hashed_url) %>
+  </div>
 	<br/>
 <% end %>
 
+</div>

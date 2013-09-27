@@ -1,2 +1,2 @@
-<%= image_tag @image.file.to_s, :id => 'bg' %>
+<%= image_tag @image.file.to_s, :class => 'bg' %>
 <div id='shareable_link'><%= link_to 'View Collection', mypanos_users_path %><br/>Share this sickpano: <br/><%= request.protocol + request.host_with_port + request.fullpath %>/<%= @image.hashed_url %></div>

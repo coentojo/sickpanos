@@ -23,14 +23,36 @@
 	z-index: 5;
 }
 
-#bg { position: absolute; overflow: hidden; top: 0; left: 0; z-index: 5;}
+.bg {
+  position: absolute; 
+  overflow: hidden; 
+  top: 0; 
+  left: 0; 
+  z-index: 5;
+}
+
+.pano-deets { 
+  font-family: "futura-pt"; 
+  font-weight: 400;
+  margin-top: 30px !important;
+}
 
 .small_banner_community { height: 200px; margin-bottom: 20px; }
 .small_banner { height: 200px; float: left; }
 
-.full_banner_community { width: 1200px; margin-bottom: 20px; }
+.full_banner_community { 
+  width: 100%;
+}
 
-.pano_deets { font-family: "futura-pt"; font-weight: 400; float: right; }
+.content-width {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.index-images {
+  padding: 0;
+}
+
 .pano_row { width: 100%; margin-bottom: 20px; }
 
 #shareable_link { height: 60px; background-color: #a16ac4; opacity: 0.7; z-index: 6; position: absolute; top: 20px; left: 20px; padding: 10px; color: #FFFFFF; font-family: "futura-pt"; font-weight: 300; }

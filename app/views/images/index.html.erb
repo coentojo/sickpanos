@@ -1,15 +1,24 @@
-<h1>all sickpanos</h1>
+<div class="container-fluid index-images">
+
+<div class="row-fluid content-width">
+  <div class="span12 text-left">
+    <h2>all sickpanos</h2>
+  </div>
+</div>
 
 <% @images.each do |image| %>
-	<div class="pano_deets">
-		<% if image.user.email == current_user.email %>
-			sickpano cred: <%= link_to(image.user.username, mypanos_users_path) %>
-		<% else %>
-			sickpano cred: <%= link_to(image.user.username, user_path(image.user)) %>
-		<% end %>
-	</div>
- 	<div><%= link_to image_tag(image.file_url, :class => 'full_banner_community'), image_path(image.hashed_url) %></div>
-    <br clear="all" />
-<% end %>
+    <div class="row-fluid pano-deets content-width">
+    	<div class="span12 text-right">
+    		<% if image.user.email == current_user.email %>
+    			sickpano cred: <%= link_to(image.user.username, mypanos_users_path) %>
+    		<% else %>
+    			sickpano cred: <%= link_to(image.user.username, user_path(image.user)) %>
+    		<% end %>
+    	</div>
+    </div>
 
-<br />
+   	<div><%= link_to image_tag(image.file_url, :class => 'full_banner_community'), image_path(image.hashed_url) %></div>
+    <br clear="all" />
+
+<% end %>
+</div>
